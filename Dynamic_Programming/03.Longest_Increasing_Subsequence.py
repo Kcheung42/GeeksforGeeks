@@ -6,7 +6,7 @@
 #    By: kcheung <kcheung@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/21 11:02:16 by kcheung           #+#    #+#              #
-#    Updated: 2018/01/09 21:19:36 by kcheung          ###   ########.fr        #
+#    Updated: 2018/03/13 16:48:59 by kcheung          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,12 +17,12 @@ def LIS(arr):
 		for j in range(0, i):
 			if arr[j] < arr[i] and lis[i] < lis[j] + 1:
 				lis[i] = lis[j] + 1
+			print(lis)
 	maximum = max(lis)
-	print lis
+	# print(lis)
 	return maximum
 
 # Driver program to test above function
 # arr = [10, 22, 9, 33, 21, 50, 41, 60]
 arr = [1,2,3,2,1,4,1,6,8,10]
-print "Length of lis is", LIS(arr)
-# This code is contributed by Nikhil Kumar Singh
+print ("Length of lis is", LIS(arr))
