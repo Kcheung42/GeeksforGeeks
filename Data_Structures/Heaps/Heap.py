@@ -54,5 +54,6 @@ h.heapPush(float("-inf"))
 h.heapPush(22)
 h.heapPush(25)
 for i in range(h.currentSize):
-    print(h.heapPop())
+    print("popping:{}".format(h.heapPop()))
+print("should be in reverse sorted order")
 print(h.heap)
